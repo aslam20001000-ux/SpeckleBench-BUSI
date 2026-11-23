@@ -154,5 +154,8 @@ Search grids (parameters chosen per σ on the **validation** split; the test spl
 6. **No patient-level split.** BUSI has no patient IDs, so one patient's images may appear in both train and test.
 7. **Small test set.** n = 15 per σ in the reported run; confidence intervals and p-values are reported, not only means.
 
+## License
+Code: [MIT](LICENSE). The BUSI dataset is not included and is subject to its own terms.
+
 ## Citation of the dataset
 W. Al-Dhabyani, M. Gomaa, H. Khaled, A. Fahmy, *Dataset of breast ultrasound images*, Data in Brief 28 (2020) 104863.
