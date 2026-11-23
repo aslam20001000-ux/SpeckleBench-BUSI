@@ -1,0 +1,265 @@
+﻿Device: cpu (none) | torch 2.15.0+cpu
+Found 780 BUSI images in data: benign=437, malignant=210, normal=133
+Split: train=200 val=10 test=15 (disjoint)
+
+== DnCNN: supervised training on BUSI train split ==
+  [DnCNN] iter 150/1500 loss 0.00660
+  [DnCNN] iter 300/1500 loss 0.00343
+  [DnCNN] iter 450/1500 loss 0.00229
+  [DnCNN] iter 600/1500 loss 0.00213
+  [DnCNN] iter 750/1500 loss 0.00192
+  [DnCNN] iter 900/1500 loss 0.00180
+  [DnCNN] iter 1050/1500 loss 0.00169
+  [DnCNN] iter 1200/1500 loss 0.00161
+  [DnCNN] iter 1350/1500 loss 0.00154
+  [DnCNN] iter 1500/1500 loss 0.00161
+
+== Noise2Void: self-supervised training on NOISY train images only ==
+  [N2V] iter 150/1500 masked loss 0.01646
+  [N2V] iter 300/1500 masked loss 0.01290
+  [N2V] iter 450/1500 masked loss 0.01145
+  [N2V] iter 600/1500 masked loss 0.01144
+  [N2V] iter 750/1500 masked loss 0.01078
+  [N2V] iter 900/1500 masked loss 0.01091
+  [N2V] iter 1050/1500 masked loss 0.01064
+  [N2V] iter 1200/1500 masked loss 0.01065
+  [N2V] iter 1350/1500 masked loss 0.01039
+  [N2V] iter 1500/1500 masked loss 0.01035
+
+== DRUNet: pretrained deepinv weights, no training ==
+  [DRUNet] weight check: Gaussian sigma=0.1 PSNR gain = +8.46 dB
+  [tune] DRUNet    sigma=0.1: log-domain sigma_in=0.0217 (val PSNR 33.27)
+  [tune] DRUNet    sigma=0.2: log-domain sigma_in=0.0433 (val PSNR 29.34)
+  [tune] DRUNet    sigma=0.3: log-domain sigma_in=0.0650 (val PSNR 25.64)
+
+== Deep Image Prior: untrained, per-image optimisation ==
+  [tune] DIP       sigma=0.1: 650 iterations (val PSNR 33.31)
+  [tune] DIP       sigma=0.2: 450 iterations (val PSNR 29.72)
+  [tune] DIP       sigma=0.3: 350 iterations (val PSNR 27.36)
+
+== Classical filters: parameter selection on validation split ==
+  [tune] Median    sigma=0.1: best {'size': 3} (val PSNR 29.27)
+  [tune] Median    sigma=0.2: best {'size': 3} (val PSNR 26.90)
+  [tune] Median    sigma=0.3: best {'size': 5} (val PSNR 25.18)
+  [tune] Bilateral sigma=0.1: best {'sc': 0.2, 'ss': 1} (val PSNR 31.36)
+  [tune] Bilateral sigma=0.2: best {'sc': 0.6, 'ss': 1} (val PSNR 28.50)
+  [tune] Bilateral sigma=0.3: best {'sc': 0.6, 'ss': 2} (val PSNR 26.46)
+  [tune] Lee       sigma=0.1: best {'win': 3, 'cu': 0.1} (val PSNR 31.53)
+  [tune] Lee       sigma=0.2: best {'win': 3, 'cu': 0.3} (val PSNR 28.19)
+  [tune] Lee       sigma=0.3: best {'win': 3, 'cu': 0.5} (val PSNR 26.16)
+  [tune] NLM       sigma=0.1: best {'k': 1.5} (val PSNR 29.79)
+  [tune] NLM       sigma=0.2: best {'k': 2.0} (val PSNR 26.03)
+  [tune] NLM       sigma=0.3: best {'k': 2.0} (val PSNR 24.29)
+
+== Evaluation on the test split ==
+  σ=0.1: image 1/15 done
+  σ=0.1: image 2/15 done
+  σ=0.1: image 3/15 done
+  σ=0.1: image 4/15 done
+  σ=0.1: image 5/15 done
+  σ=0.1: image 6/15 done
+  σ=0.1: image 7/15 done
+  σ=0.1: image 8/15 done
+  σ=0.1: image 9/15 done
+  σ=0.1: image 10/15 done
+  σ=0.1: image 11/15 done
+  σ=0.1: image 12/15 done
+  σ=0.1: image 13/15 done
+  σ=0.1: image 14/15 done
+  σ=0.1: image 15/15 done
+  σ=0.1: done (15 images x 8 methods)
+  σ=0.2: image 1/15 done
+  σ=0.2: image 2/15 done
+  σ=0.2: image 3/15 done
+  σ=0.2: image 4/15 done
+  σ=0.2: image 5/15 done
+  σ=0.2: image 6/15 done
+  σ=0.2: image 7/15 done
+  σ=0.2: image 8/15 done
+  σ=0.2: image 9/15 done
+  σ=0.2: image 10/15 done
+  σ=0.2: image 11/15 done
+  σ=0.2: image 12/15 done
+  σ=0.2: image 13/15 done
+  σ=0.2: image 14/15 done
+  σ=0.2: image 15/15 done
+  σ=0.2: done (15 images x 8 methods)
+  σ=0.3: image 1/15 done
+  σ=0.3: image 2/15 done
+  σ=0.3: image 3/15 done
+  σ=0.3: image 4/15 done
+  σ=0.3: image 5/15 done
+  σ=0.3: image 6/15 done
+  σ=0.3: image 7/15 done
+  σ=0.3: image 8/15 done
+  σ=0.3: image 9/15 done
+  σ=0.3: image 10/15 done
+  σ=0.3: image 11/15 done
+  σ=0.3: image 12/15 done
+  σ=0.3: image 13/15 done
+  σ=0.3: image 14/15 done
+  σ=0.3: image 15/15 done
+  σ=0.3: done (15 images x 8 methods)
+
+== Summaries ==
+# BUSI speckle reduction: AI vs classical — results of this run
+
+- Device: cpu (none); torch 2.15.0+cpu
+- Images: 15 test / 10 val / 200 train, resized to 128x128, grayscale
+- Noise: y = x·(1 + σ·n), n ~ N(0,1), σ ∈ [0.1, 0.2, 0.3]; identical noisy images for all methods
+- Reference = original BUSI image (already contains native speckle). Mean ENL of the reference ROIs: 58.6
+
+## Methods actually run
+
+| method | category | training | train_time_s | params |
+|---|---|---|---|---|
+| DnCNN | AI - supervised, trained here | 200 clean BUSI imgs, synthetic speckle σ~U(0.05, 0.35), 1500 iters, 64x64 patches, batch 64 | 1996.100 | 556097 |
+| Noise2Void | AI - self-supervised, trained here (no clean targets) | 600 noisy imgs (1 realisation per image per σ), 1500 iters, 2% blind-spot pixels | 573.900 | 1927841 |
+| DRUNet | AI - pretrained (Gaussian), zero-shot, NOT trained here | deepinv drunet_deepinv_gray weights; verified (+8.46 dB on Gaussian check); log-domain; only σ_in chosen on val | 0.000 | 32638656 |
+| DIP | AI - untrained (no dataset), optimised per image | no training; iterations/σ chosen on 2 val imgs: {0.1: 650, 0.2: 450, 0.3: 350} | 1062.900 | 1936769 |
+| Median | classical filter | no training; params chosen on val: σ=0.1: {'size': 3}; σ=0.2: {'size': 3}; σ=0.3: {'size': 5} | 0.000 | 0 |
+| Bilateral | classical filter | no training; params chosen on val: σ=0.1: {'sc': 0.2, 'ss': 1}; σ=0.2: {'sc': 0.6, 'ss': 1}; σ=0.3: {'sc': 0.6, 'ss': 2} | 0.000 | 0 |
+| Lee | classical filter | no training; params chosen on val: σ=0.1: {'win': 3, 'cu': 0.1}; σ=0.2: {'win': 3, 'cu': 0.3}; σ=0.3: {'win': 3, 'cu': 0.5} | 0.000 | 0 |
+| NLM | classical filter | no training; params chosen on val: σ=0.1: {'k': 1.5}; σ=0.2: {'k': 2.0}; σ=0.3: {'k': 2.0} | 0.000 | 0 |
+
+## Results per noise level (mean ± std over test images)
+
+| level | method | PSNR | SSIM | ENL | EPI | time (ms) |
+|---|---|---|---|---|---|---|
+| 0.100 | Noisy input | 28.754 ± 1.624 | 0.880 ± 0.051 | 33.5 ± 14.3 | 0.963 ± 0.014 | 0.0 |
+| 0.100 | DnCNN | 32.382 ± 1.223 | 0.933 ± 0.021 | 60.0 ± 38.5 | 0.969 ± 0.011 | 170.6 |
+| 0.100 | Noise2Void | 28.746 ± 1.126 | 0.841 ± 0.024 | 84.5 ± 60.2 | 0.943 ± 0.010 | 62.8 |
+| 0.100 | DRUNet | 33.264 ± 1.200 | 0.943 ± 0.020 | 73.9 ± 58.3 | 0.973 ± 0.009 | 592.5 |
+| 0.100 | DIP | 30.761 ± 1.447 | 0.880 ± 0.033 | 69.7 ± 49.9 | 0.954 ± 0.025 | 135420.7 |
+| 0.100 | Median | 28.739 ± 1.253 | 0.855 ± 0.028 | 70.6 ± 43.5 | 0.941 ± 0.012 | 4.4 |
+| 0.100 | Bilateral | 31.033 ± 1.045 | 0.905 ± 0.017 | 72.8 ± 47.3 | 0.962 ± 0.011 | 0.4 |
+| 0.100 | Lee | 31.343 ± 1.268 | 0.923 ± 0.028 | 60.8 ± 40.0 | 0.966 ± 0.012 | 0.6 |
+| 0.100 | NLM | 29.692 ± 1.128 | 0.846 ± 0.052 | 133.1 ± 173.6 | 0.942 ± 0.021 | 42.7 |
+| 0.200 | Noisy input | 22.848 ± 1.623 | 0.695 ± 0.103 | 15.9 ± 3.4 | 0.877 ± 0.041 | 0.0 |
+| 0.200 | DnCNN | 28.871 ± 1.049 | 0.854 ± 0.034 | 56.9 ± 36.6 | 0.914 ± 0.025 | 213.1 |
+| 0.200 | Noise2Void | 27.380 ± 1.074 | 0.797 ± 0.032 | 64.1 ± 36.1 | 0.897 ± 0.025 | 67.5 |
+| 0.200 | DRUNet | 29.300 ± 1.174 | 0.873 ± 0.038 | 82.2 ± 64.7 | 0.919 ± 0.026 | 712.3 |
+| 0.200 | DIP | 27.148 ± 1.799 | 0.769 ± 0.048 | 63.8 ± 44.6 | 0.882 ± 0.040 | 101730.4 |
+| 0.200 | Median | 26.618 ± 1.196 | 0.788 ± 0.050 | 51.4 ± 24.3 | 0.860 ± 0.034 | 4.8 |
+| 0.200 | Bilateral | 28.110 ± 1.147 | 0.843 ± 0.036 | 58.8 ± 29.8 | 0.889 ± 0.030 | 0.4 |
+| 0.200 | Lee | 27.841 ± 1.251 | 0.831 ± 0.047 | 58.4 ± 30.9 | 0.892 ± 0.032 | 0.7 |
+| 0.200 | NLM | 25.314 ± 1.095 | 0.684 ± 0.104 | 153.3 ± 159.0 | 0.813 ± 0.069 | 46.9 |
+| 0.300 | Noisy input | 19.427 ± 1.607 | 0.545 ± 0.128 | 9.2 ± 1.3 | 0.771 ± 0.066 | 0.0 |
+| 0.300 | DnCNN | 26.788 ± 1.043 | 0.776 ± 0.046 | 52.3 ± 34.6 | 0.852 ± 0.040 | 190.3 |
+| 0.300 | Noise2Void | 26.059 ± 1.153 | 0.746 ± 0.048 | 54.0 ± 29.1 | 0.837 ± 0.043 | 61.8 |
+| 0.300 | DRUNet | 25.559 ± 1.359 | 0.752 ± 0.075 | 56.5 ± 28.3 | 0.814 ± 0.062 | 606.1 |
+| 0.300 | DIP | 24.995 ± 1.697 | 0.665 ± 0.063 | 63.0 ± 46.5 | 0.795 ± 0.063 | 74499.8 |
+| 0.300 | Median | 24.403 ± 1.350 | 0.660 ± 0.069 | 65.9 ± 35.5 | 0.679 ± 0.036 | 32.1 |
+| 0.300 | Bilateral | 25.857 ± 1.299 | 0.736 ± 0.050 | 76.9 ± 44.0 | 0.783 ± 0.035 | 1.1 |
+| 0.300 | Lee | 25.844 ± 1.257 | 0.760 ± 0.065 | 45.7 ± 21.1 | 0.800 ± 0.054 | 0.7 |
+| 0.300 | NLM | 23.490 ± 1.180 | 0.603 ± 0.109 | 145.8 ± 131.7 | 0.690 ± 0.113 | 43.6 |
+
+## Overall means (all noise levels)
+
+| method | PSNR | SSIM | ENL | EPI | time_ms |
+|---|---|---|---|---|---|
+| DnCNN | 29.347 | 0.854 | 56.426 | 0.912 | 191.344 |
+| Noise2Void | 27.395 | 0.795 | 67.546 | 0.892 | 64.029 |
+| DRUNet | 29.374 | 0.856 | 70.882 | 0.902 | 636.954 |
+| DIP | 27.634 | 0.771 | 65.474 | 0.877 | 103883.622 |
+| Median | 26.587 | 0.768 | 62.634 | 0.827 | 13.761 |
+| Bilateral | 28.333 | 0.828 | 69.512 | 0.878 | 0.609 |
+| Lee | 28.343 | 0.838 | 55.008 | 0.886 | 0.678 |
+| NLM | 26.165 | 0.711 | 144.043 | 0.815 | 44.387 |
+
+## Ranking
+
+Mean per-image rank across PSNR, SSIM, EPI (1 = best; ENL excluded because it rewards over-smoothing):
+
+| method | mean_rank |
+|---|---|
+| DnCNN | 1.815 |
+| DRUNet | 1.963 |
+| Lee | 3.622 |
+| Bilateral | 4.044 |
+| Noise2Void | 4.970 |
+| DIP | 5.526 |
+| Median | 6.896 |
+| NLM | 7.163 |
+
+- **Best AI model:** DnCNN
+- **Best classical filter:** Lee
+
+- σ=0.1: DnCNN vs Lee: PSNR 32.38 vs 31.34 dB, SSIM 0.933 vs 0.923, EPI 0.969 vs 0.966, ENL 60.0 vs 60.8, time 170.6 vs 0.6 ms
+- σ=0.2: DnCNN vs Lee: PSNR 28.87 vs 27.84 dB, SSIM 0.854 vs 0.831, EPI 0.914 vs 0.892, ENL 56.9 vs 58.4, time 213.1 vs 0.7 ms
+- σ=0.3: DnCNN vs Lee: PSNR 26.79 vs 25.84 dB, SSIM 0.776 vs 0.760, EPI 0.852 vs 0.800, ENL 52.3 vs 45.7, time 190.3 vs 0.7 ms
+
+## Statistics
+
+Friedman test (all methods, paired by image):
+
+| sigma | metric | n_images | chi2 | p_value |
+|---|---|---|---|---|
+| 0.100 | PSNR | 15 | 93.289 | 2.61e-17 |
+| 0.100 | SSIM | 15 | 92.289 | 4.19e-17 |
+| 0.100 | ENL | 15 | 49.067 | 2.20e-08 |
+| 0.100 | EPI | 15 | 90.733 | 8.75e-17 |
+| 0.200 | PSNR | 15 | 98.156 | 2.59e-18 |
+| 0.200 | SSIM | 15 | 94.200 | 1.69e-17 |
+| 0.200 | ENL | 15 | 26.711 | 3.76e-04 |
+| 0.200 | EPI | 15 | 89.889 | 1.30e-16 |
+| 0.300 | PSNR | 15 | 78.111 | 3.34e-14 |
+| 0.300 | SSIM | 15 | 76.889 | 5.93e-14 |
+| 0.300 | ENL | 15 | 39.756 | 1.40e-06 |
+| 0.300 | EPI | 15 | 89.156 | 1.84e-16 |
+
+Wilcoxon signed-rank, each AI model vs best classical (Lee); Holm-corrected over all rows. median_diff > 0 means the AI model scores higher:
+
+| sigma | metric | comparison | median_diff | wins | p_raw | p_holm |
+|---|---|---|---|---|---|---|
+| 0.100 | PSNR | DnCNN vs Lee | 1.023 | 15/15 | 6.10e-05 | 0.003 |
+| 0.100 | PSNR | Noise2Void vs Lee | -2.639 | 0/15 | 6.10e-05 | 0.003 |
+| 0.100 | PSNR | DRUNet vs Lee | 1.967 | 15/15 | 6.10e-05 | 0.003 |
+| 0.100 | PSNR | DIP vs Lee | -0.570 | 3/15 | 0.007 | 0.121 |
+| 0.100 | SSIM | DnCNN vs Lee | 0.008 | 14/15 | 1.22e-04 | 0.003 |
+| 0.100 | SSIM | Noise2Void vs Lee | -0.079 | 0/15 | 6.10e-05 | 0.003 |
+| 0.100 | SSIM | DRUNet vs Lee | 0.017 | 15/15 | 6.10e-05 | 0.003 |
+| 0.100 | SSIM | DIP vs Lee | -0.035 | 0/15 | 6.10e-05 | 0.003 |
+| 0.100 | ENL | DnCNN vs Lee | -0.422 | 7/15 | 0.421 | 1.000 |
+| 0.100 | ENL | Noise2Void vs Lee | 14.383 | 15/15 | 6.10e-05 | 0.003 |
+| 0.100 | ENL | DRUNet vs Lee | 7.405 | 14/15 | 1.83e-04 | 0.005 |
+| 0.100 | ENL | DIP vs Lee | 2.938 | 11/15 | 0.064 | 0.828 |
+| 0.100 | EPI | DnCNN vs Lee | 0.002 | 13/15 | 3.05e-04 | 0.008 |
+| 0.100 | EPI | Noise2Void vs Lee | -0.022 | 0/15 | 6.10e-05 | 0.003 |
+| 0.100 | EPI | DRUNet vs Lee | 0.007 | 15/15 | 6.10e-05 | 0.003 |
+| 0.100 | EPI | DIP vs Lee | -0.006 | 1/15 | 6.10e-04 | 0.013 |
+| 0.200 | PSNR | DnCNN vs Lee | 1.006 | 15/15 | 6.10e-05 | 0.003 |
+| 0.200 | PSNR | Noise2Void vs Lee | -0.415 | 0/15 | 6.10e-05 | 0.003 |
+| 0.200 | PSNR | DRUNet vs Lee | 1.404 | 15/15 | 6.10e-05 | 0.003 |
+| 0.200 | PSNR | DIP vs Lee | -0.560 | 3/15 | 0.010 | 0.174 |
+| 0.200 | SSIM | DnCNN vs Lee | 0.020 | 14/15 | 6.10e-04 | 0.013 |
+| 0.200 | SSIM | Noise2Void vs Lee | -0.024 | 0/15 | 6.10e-05 | 0.003 |
+| 0.200 | SSIM | DRUNet vs Lee | 0.037 | 15/15 | 6.10e-05 | 0.003 |
+| 0.200 | SSIM | DIP vs Lee | -0.050 | 1/15 | 1.83e-04 | 0.005 |
+| 0.200 | ENL | DnCNN vs Lee | -2.342 | 6/15 | 0.454 | 1.000 |
+| 0.200 | ENL | Noise2Void vs Lee | 6.063 | 11/15 | 0.026 | 0.384 |
+| 0.200 | ENL | DRUNet vs Lee | 12.047 | 13/15 | 0.002 | 0.038 |
+| 0.200 | ENL | DIP vs Lee | -2.987 | 7/15 | 0.890 | 1.000 |
+| 0.200 | EPI | DnCNN vs Lee | 0.022 | 15/15 | 6.10e-05 | 0.003 |
+| 0.200 | EPI | Noise2Void vs Lee | 0.003 | 9/15 | 0.303 | 1.000 |
+| 0.200 | EPI | DRUNet vs Lee | 0.024 | 15/15 | 6.10e-05 | 0.003 |
+| 0.200 | EPI | DIP vs Lee | -0.006 | 4/15 | 0.107 | 1.000 |
+| 0.300 | PSNR | DnCNN vs Lee | 1.010 | 15/15 | 6.10e-05 | 0.003 |
+| 0.300 | PSNR | Noise2Void vs Lee | 0.240 | 13/15 | 0.001 | 0.023 |
+| 0.300 | PSNR | DRUNet vs Lee | -0.243 | 4/15 | 0.073 | 0.876 |
+| 0.300 | PSNR | DIP vs Lee | -0.697 | 2/15 | 4.27e-04 | 0.010 |
+| 0.300 | SSIM | DnCNN vs Lee | 0.015 | 10/15 | 0.095 | 1.000 |
+| 0.300 | SSIM | Noise2Void vs Lee | -0.005 | 6/15 | 0.107 | 1.000 |
+| 0.300 | SSIM | DRUNet vs Lee | -0.008 | 4/15 | 0.188 | 1.000 |
+| 0.300 | SSIM | DIP vs Lee | -0.076 | 0/15 | 6.10e-05 | 0.003 |
+| 0.300 | ENL | DnCNN vs Lee | 3.395 | 10/15 | 0.107 | 1.000 |
+| 0.300 | ENL | Noise2Void vs Lee | 3.521 | 12/15 | 0.012 | 0.199 |
+| 0.300 | ENL | DRUNet vs Lee | 6.514 | 14/15 | 4.27e-04 | 0.010 |
+| 0.300 | ENL | DIP vs Lee | 6.760 | 9/15 | 0.135 | 1.000 |
+| 0.300 | EPI | DnCNN vs Lee | 0.046 | 15/15 | 6.10e-05 | 0.003 |
+| 0.300 | EPI | Noise2Void vs Lee | 0.037 | 15/15 | 6.10e-05 | 0.003 |
+| 0.300 | EPI | DRUNet vs Lee | 0.013 | 10/15 | 0.030 | 0.422 |
+| 0.300 | EPI | DIP vs Lee | 0.006 | 8/15 | 0.762 | 1.000 |
+
+
+All outputs written to E:\python\busi_ai_denoising\results

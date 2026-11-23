@@ -1,0 +1,26 @@
+{
+ "data_dir": "data",
+ "kaggle_handle": "aryashah2k/breast-ultrasound-images-dataset",
+ "out_dir": "results_quick",
+ "img_size": 128,
+ "n_test": 4,
+ "n_val": 3,
+ "n_train": 40,
+ "noise_levels": [
+  0.1,
+  0.2,
+  0.3
+ ],
+ "dncnn_iters": 50,
+ "n2v_iters": 50,
+ "dip_max_iters": 100,
+ "dip_val_images": 1,
+ "cpu_timing_images": 2,
+ "seed": 0,
+ "skip": [],
+ "train_batch": 8,
+ "patch": 48,
+ "threads": 0,
+ "cpu_preset": false,
+ "quick": true
+}

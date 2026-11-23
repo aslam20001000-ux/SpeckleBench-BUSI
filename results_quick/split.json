@@ -1,0 +1,196 @@
+{
+ "train": [
+  [
+   "data\\benign\\benign (339).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (364).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (155).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (40).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (254).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (125).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (131).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (119).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (327).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (276).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (88).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (434).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (129).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (135).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (94).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (41).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (414).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (197).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (121).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (283).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (110).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (175).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (277).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (80).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (83).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (138).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (181).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (152).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (169).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (44).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (142).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (251).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (209).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (100).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (192).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (2).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (403).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (178).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (424).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (325).png",
+   "benign"
+  ]
+ ],
+ "val": [
+  [
+   "data\\benign\\benign (156).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (128).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (45).png",
+   "benign"
+  ]
+ ],
+ "test": [
+  [
+   "data\\benign\\benign (332).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (35).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (177).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (90).png",
+   "normal"
+  ]
+ ]
+}

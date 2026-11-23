@@ -1,0 +1,9 @@
+torch>=2.0
+numpy
+scipy
+pandas
+matplotlib
+scikit-image
+opencv-python-headless
+deepinv
+kagglehub

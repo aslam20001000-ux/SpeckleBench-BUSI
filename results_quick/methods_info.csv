@@ -1,0 +1,9 @@
+method,category,training,train_time_s,params
+DnCNN,"AI - supervised, trained here","40 clean BUSI imgs, synthetic speckle σ~U(0.05, 0.35), 50 iters, 64x64 patches, batch 64",52.9,556097
+Noise2Void,"AI - self-supervised, trained here (no clean targets)","120 noisy imgs (1 realisation per image per σ), 50 iters, 2% blind-spot pixels",11.5,1927841
+DRUNet,"AI - pretrained (Gaussian), zero-shot, NOT trained here",deepinv drunet_deepinv_gray weights; verified (+7.87 dB on Gaussian check); log-domain; only σ_in chosen on val,0.0,32638656
+DIP,"AI - untrained (no dataset), optimised per image","no training; iterations/σ chosen on 1 val imgs: {0.1: 100, 0.2: 100, 0.3: 100}",58.8,1936769
+Median,classical filter,no training; params chosen on val: σ=0.1: {'size': 3}; σ=0.2: {'size': 3}; σ=0.3: {'size': 3},0.0,0
+Bilateral,classical filter,"no training; params chosen on val: σ=0.1: {'sc': 0.1, 'ss': 2}; σ=0.2: {'sc': 0.3, 'ss': 2}; σ=0.3: {'sc': 0.3, 'ss': 2}",0.0,0
+Lee,classical filter,"no training; params chosen on val: σ=0.1: {'win': 5, 'cu': 0.1}; σ=0.2: {'win': 5, 'cu': 0.2}; σ=0.3: {'win': 5, 'cu': 0.4}",0.0,0
+NLM,classical filter,no training; params chosen on val: σ=0.1: {'k': 1.5}; σ=0.2: {'k': 1.5}; σ=0.3: {'k': 1.5},0.0,0

@@ -1,0 +1,908 @@
+{
+ "train": [
+  [
+   "data\\malignant\\malignant (193).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (255).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (225).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (345).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (113).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (43).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (80).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (104).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (240).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (56).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (151).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (109).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (62).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (139).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (57).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (304).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (342).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (187).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (1).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (251).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (307).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (169).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (72).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (120).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (161).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (93).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (222).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (426).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (377).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (102).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (12).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (118).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (180).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (241).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (127).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (353).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (57).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (166).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (31).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (201).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (8).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (52).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (9).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (389).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (7).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (199).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (122).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (397).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (83).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (83).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (115).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (381).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (235).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (55).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (184).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (116).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (27).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (75).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (134).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (39).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (194).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (17).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (324).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (184).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (370).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (2).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (63).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (208).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (334).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (97).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (154).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (150).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (372).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (394).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (82).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (347).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (356).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (15).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (178).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (92).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (34).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (43).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (256).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (116).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (59).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (228).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (103).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (352).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (392).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (3).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (107).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (189).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (102).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (408).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (80).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (105).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (433).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (328).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (339).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (107).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (112).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (127).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (3).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (101).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (153).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (57).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (38).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (53).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (326).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (401).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (55).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (190).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (125).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (278).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (66).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (120).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (99).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (323).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (147).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (155).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (390).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (191).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (95).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (38).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (350).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (404).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (229).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (373).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (89).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (51).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (109).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (254).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (73).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (198).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (420).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (301).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (98).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (74).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (185).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (232).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (257).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (80).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (313).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (5).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (30).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (87).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (173).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (299).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (129).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (144).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (59).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (25).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (207).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (35).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (32).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (31).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (156).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (292).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (128).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (110).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (163).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (143).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (285).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (131).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (39).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (93).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (76).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (215).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (6).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (63).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (28).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (87).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (62).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (86).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (120).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (212).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (26).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (192).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (49).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (216).png",
+   "benign"
+  ],
+  [
+   "data\\normal\\normal (20).png",
+   "normal"
+  ],
+  [
+   "data\\benign\\benign (265).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (174).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (15).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (13).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (46).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (261).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (77).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (36).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (58).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (23).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (49).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (82).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (49).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (179).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (68).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (146).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (97).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (124).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (108).png",
+   "benign"
+  ]
+ ],
+ "val": [
+  [
+   "data\\benign\\benign (183).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (413).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (186).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (101).png",
+   "malignant"
+  ],
+  [
+   "data\\benign\\benign (263).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (170).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (149).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (34).png",
+   "normal"
+  ],
+  [
+   "data\\malignant\\malignant (51).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (42).png",
+   "malignant"
+  ]
+ ],
+ "test": [
+  [
+   "data\\benign\\benign (332).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (35).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (385).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (287).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (148).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (11).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (242).png",
+   "benign"
+  ],
+  [
+   "data\\benign\\benign (61).png",
+   "benign"
+  ],
+  [
+   "data\\malignant\\malignant (177).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (96).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (41).png",
+   "malignant"
+  ],
+  [
+   "data\\malignant\\malignant (100).png",
+   "malignant"
+  ],
+  [
+   "data\\normal\\normal (90).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (130).png",
+   "normal"
+  ],
+  [
+   "data\\normal\\normal (111).png",
+   "normal"
+  ]
+ ]
+}
